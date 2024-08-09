@@ -1,67 +1,77 @@
 body {
-  background-color: #e4eaec;
-  font-family: sans-serif;
+  background-color: rgb(182, 231, 225);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #885df1;
+}
+
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+}
+
+header {
+  margin-bottom: 30px;
 }
 
 h1 {
   text-align: center;
-  font-family: sans-serif;
+  font-weight: 800;
   font-size: 36px;
+  line-height: 1.5;
+  color: #272044;
+}
+main {
+  display: center;
 }
 
-h2 {
-  margin: 0 0 5px;
-  font-size: 28px;
-}
-
-select {
-  display: block;
-  width: 100%;
-  font-size: 18px;
-  border-radius: 4px;
-  padding: 10px;
-}
-
-.container {
-  max-width: 600px;
-  margin: 60px auto;
-  background: rgb(225, 250, 221);
+form {
   padding: 30px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: rgb(231, 250, 247);
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   border-radius: 10px;
-}
-
-.city {
   display: flex;
-  margin: 10px 0;
-  justify-content: space-between;
-  padding: 30px 0;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
 }
 
-.city:last-child {
+.instructions {
+  padding: 16px;
+  border: 1px solid rgba(39, 33, 66, 0.5);
+  width: 80%;
+  font-size: 16px;
+  border-radius: 50px;
+  line-height: 20px;
+  color: #272044;
+}
+
+.submit-button {
+  margin-left: 10px;
+  background: #885df1;
+  color: white;
   border: none;
+  width: 150px;
+  font-size: 16px;
+  border-radius: 50px;
+  padding: 14px 24px;
 }
 
-.date {
-  opacity: 0.7;
-}
-
-.time {
-  font-size: 48px;
-  font-weight: bold;
-}
-
-.time small {
-  font-size: 24px;
-  vertical-align: middle;
-  line-height: 48px;
+.poem {
+  font-size: 16px;
+  background-color: rgb(231, 250, 247);
+  padding: 20px;
+  line-height: 2;
+  border-left: 3px solid #885df1;
+  box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
 }
 
 footer {
   text-align: center;
   font-size: 14px;
-  color: rgba(0, 0, 0, 0.8);
+  margin-top: 30px;
+}
+
 }
 
 
