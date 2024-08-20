@@ -3,58 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>About Me</title>
     <link rel="stylesheet" href="styles.css" />
-    <title>AI English Poem Generator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Naznin Sultana</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="homepage.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1>AI English Poem Generator</h1>
-      </header>
-
-      <main>
-        <div class="form-container">
-          <form id="poem-generator-form">
-            <input
-              type="text"
-              placeholder="Enter the topic of an English poem"
-              autofocus
-              required
-              autocomplete="off"
-              class="instructions"
-              id="user-instructions"
-            />
-            <input type="submit" class="submit-button" />
-          </form>
-          <div class="hint">i.e: Flower, Paris or Cheese</div>
-        </div>
-        <div class="poem hidden" id="poem"></div>
-      </main>
-      <footer>
-        This project was coded by
-        <a href="https://github.com/naznin07" target="_blank"
-          >Naznin Sultana,</a
-        >
-        and is
-        <a
-          href="https://github.com/naznin07/App/tree/AIgenerator"
-          target="_blank"
-        >
-          open-sourced on GitHub</a
-        >
-        and
-        <a
-          href="https://projectnetlifyapp1.netlify.app"
-          target="_blank"
-          >hosted on Netlify</a
-        >
-      </footer>
+    <div>
+      <a href="homepage.html" class="homepage-link">Back to homepage</a>
     </div>
-    <script src="index.js"></script>
+    <h1>About me</h1>
+    <h3>SheCodes Learner from New York, America</h3>
+    <div class="about-paragraphs">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
+        aperiam provident tempora? Cumque adipisci, non dolorem quia, odit qui
+        alias veniam excepturi rem dolor fugit dignissimos, sed voluptatum
+        blanditiis harum.
+      </p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/139/617/original/Screenshot_16-8-2024_125054_.jpeg?1723827042"
+            class="img-fluid p-3 shadow rounded"
+          />
+        </div>
+        <div class="col-sm-4">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/139/620/original/Screenshot_16-8-2024_13315_.jpeg?1723827776"
+            class="img-fluid rounded"
+            class="img-fluid p-3 shadow rounded"
+          />
+        </div>
+        <div class="col-sm-4">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/139/754/original/Screenshot_16-8-2024_12595_codesandbox.io.jpg?1723910489"
+            class="img-fluid p-2 shadow rounded"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <h2>📮 Contact me</h2>
+      <a href="mailto:nliberation1@gmail.com" class="email-link">
+        nliberation1@gmail.com</a
+      >
+    </div>
   </body>
 </html>
+
 
 
 
