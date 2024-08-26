@@ -1,198 +1,260 @@
-:root {
-  --branding-color: #6c63ff;
-  --secondary-color: #f9f7fe;
-  --heading-font-family: "Playfair Display", serif;
-  --default-font-family: "Poppins", sans-serif;
-}
-
 body {
-  font-family: var(--default-font-family);
+  font-family: "Poppins", sans-serif;
+  background: #272044;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: black;
-  font-family: var(--heading-font-family);
-  font-weight: bold;
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-h1 {
-  font-size: 96px;
-  line-height: 1.5;
-}
-
-h2 {
-  font-size: 64px;
-}
-
-p {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 30px;
-}
-
-.hero {
-  background: var(--secondary-color);
+.text-center {
   text-align: center;
-  padding: 160px 20px;
 }
 
-.hero p {
-  font-size: 36px;
-  font-weight: bold;
-  margin: 0;
-  color: #272142;
+.grid {
+  display: grid;
+  grid-gap: 64px;
 }
 
-.hero h2 {
-  font-family: var(--heading-font-family);
-  font-weight: normal;
-  line-height: 1.5;
-  font-size: 24px;
+.img-responsive {
+  width: 100%;
+  display: block;
 }
 
-.btn-branding {
-  background: var(--branding-color);
-  border-radius: 4px;
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-3-columns-with-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
+}
+
+.instagram-embeds {
+  margin: 30px 0;
+}
+
+.card {
+  background: white;
+  margin: 30px 0;
+}
+
+.card-header.grid {
+  grid-gap: 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+
+.btn {
+  display: block;
   color: white;
-  font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
-  text-decoration: none;
-}
-
-.btn-branding-outline {
-  color: var(--branding-color);
-  border: 1px solid var(--branding-color);
-  border-radius: 4px;
-  font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
-  text-decoration: none;
-}
-
-.project-desciption {
-  padding: 120px 60px;
-}
-
-@media (max-width: 900px) {
-  h1 {
-    font-size: 44px;
-    line-height: 2;
-  }
-
-  h2 {
-    font-size: 44px;
-  }
-
-  .hero {
-    padding: 80px 20px;
-  }
-
-  .project-desciption {
-    padding: 0;
-    text-align: center;
-  }
-}
-.content-container {
-  padding: 160px 20px;
-}
-
-.content h1 {
-  font-size: 64px;
-  line-height: 80px;
-}
-
-.content h2 {
-  font-size: 18px;
-  font-family: var(--default-font-family);
-}
-
-.content h3 {
-  font-size: 24px;
-  line-height: 1.5;
-
-  font-family: var(--default-font-family);
-}
-
-.content p {
+  font-weight: 700;
   font-size: 14px;
-}
-
-.content {
-  margin: 30px;
-}
-.content {
+  line-height: 21px;
   text-align: center;
-  padding: 0;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #462cb3;
+  text-decoration: none;
 }
 
-nav {
-  padding: 20px 0;
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px;
 }
 
-nav ul {
-  padding: 0;
+section.secondary {
+  background: #f8f8f8;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/141/005/original/OIP.jpeg?1724627681");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 200px 0;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1;
+  margin: 30px 0;
+}
+
+header h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.5;
   margin: 0;
 }
 
-nav li {
-  display: inline;
-  list-style: none;
-  line-height: 42px;
-  margin-left: 15px;
+header h3 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  margin: 0;
 }
 
-nav a {
+header a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #272044;
+  padding: 16px 32px;
+  margin-top: 32px;
+  display: inline-block;
+  letter-spacing: 3px;
   text-decoration: none;
-  color: #272142;
-  transition: all 100ms ease-in-out;
+  text-transform: uppercase;
+  background: white;
 }
 
-nav a:hover,
-nav li.active a {
-  color: var(--branding-color);
+main {
+  background-color: white;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #272044;
+  margin: 0;
+}
+
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  margin: 0;
+  line-height: 1;
+  color: #272044;
+}
+
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #272044;
+  opacity: 0.7;
 }
 
 footer {
-  margin: 60px 0;
-}
-
-footer .contact-box {
-  background: var(--secondary-color);
-  padding: 30px 120px;
-  border-radius: 10px;
-}
-
-footer .contact-box p {
-  margin: 0;
-}
-
-footer .email-link {
-  text-decoration: none;
-  color: black;
-  font-size: 24px;
-}
-
-footer .email-link:hover {
-  color: var(--branding-color);
-}
-
-footer .social-links a {
-  margin: 0 20px;
-  color: var(--branding-color);
-  background: var(--secondary-color);
-  padding: 10px 14px;
-  border-radius: 50%;
-  font-size: 18px;
-  transition: all 100ms ease-in-out;
-}
-
-footer .social-links a:hover {
   color: white;
-  background: var(--branding-color);
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.7;
+  line-height: 24px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+
+@media (max-width: 960px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16 / 9;
+  }
+}
+.card-header grid grid-2-columns {
+  width: 200;
+  height: 130;
+  aspect-ratio: 1/1;
 }
