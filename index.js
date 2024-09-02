@@ -1,7 +1,8 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import Weather from "./Weather";
 
-import WeatherApp from "./WeatherApp";
+import "./styles.css";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -9,7 +10,8 @@ const root = createRoot(rootElement);
 root.render(
   <StrictMode>
     <div className="App">
-      <WeatherApp />
+      <h1>React External Components</h1>
+      <Weather city="Sydney" />
     </div>
   </StrictMode>
 );
